@@ -25,7 +25,7 @@ function App() {
   ])
 
   const deleteItems = (id) => {
-    setItems(items.filter( (task) => task.id !== id))
+    setItems(items.filter( (item) => item.id !== id))
   }
 
   // Add item

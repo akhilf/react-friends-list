@@ -6,6 +6,10 @@ const AddItem = ({ onAdd }) => {
     const [text, setText] = useState('is your friend');
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
+          if(!name){
+              alert('Please add valid name');
+              return;
+          }
           onAdd({ name, text });
           setName('');
         }
